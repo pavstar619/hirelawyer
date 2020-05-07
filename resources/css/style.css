@@ -507,3 +507,9 @@ header{
 
 
 
+
+.map-box {
+position: relative;
+    bottom:40px;
+
+}
