@@ -540,6 +540,7 @@ header{
     border-radius: 10px;
 }
 
+/* MAIN NAV*/
 .main-nav {
     margin-top: 20px;
     list-style: none;
@@ -567,6 +568,20 @@ header{
     border-bottom: 2px solid darkorange ;
 }
 
+/* MOBILE NAV*/
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+/* STICKY NAV*/
 .sticky{
     position: fixed;
     width: 100%;
@@ -607,5 +622,4 @@ header{
         }
 }
 
-
-
+  

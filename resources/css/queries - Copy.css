@@ -3,8 +3,9 @@
   .hero-text-box {
     width: 100%;
     padding: 0 2%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+  }
+  .row {
+    padding: 0 2%;
   }
 }
 
@@ -16,13 +17,31 @@
   section {
     padding: 60px 0;
   }
-  .hero-text-box {
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
   .long-copy {
     width: 80%;
     margin-left: 10%;
+  }
+  .steps-box {
+    margin-top: 10px;
+  }
+  .steps-box:last-child {
+    margin-top: 10px;
+  }
+  .works-steps {
+    margin-bottom: 40px;
+  }
+  .works-step:last-of-type {
+    margin-bottom: 60px;
+  }
+  .app-screen {
+    width: 50%;
+  }
+  .icon-small {
+    width: 17px;
+    margin-right: 5px;
+  }
+  .city-feature {
+    font-size: 90%;
   }
   .plan-box {
     width: 100%;
@@ -33,10 +52,6 @@
   }
   .contact-form {
     width: 80%;
-  }
-  .logo {
-    height: 80px;
-    margin-left: 20px;
   }
 }
 
@@ -64,7 +79,7 @@
   }
   .main-nav {
     float: left;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-left: 25px;
   }
   .main-nav li {
@@ -75,7 +90,7 @@
     display: block;
     border: 0;
     padding: 10px 0;
-    font-size: 110%;
+    font-size: 100%;
   }
   .sticky .main-nav {
     margin-top: 10px;
@@ -100,16 +115,34 @@
     width: 100%;
     margin-left: 0%;
   }
+  .app-screen {
+    width: 40%;
+  }
+  .steps-box:first-child {
+    text-align: center;
+  }
+  .works-step div {
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+    padding: 4px;
+    font-size: 120%;
+  }
+  .works-step {
+    margin-bottom: 20px;
+  }
+  .works-step:last-of-type {
+    margin-bottom: 20px;
+  }
 }
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
-  .hero-text-box {
-    -webkit-transform: translate(-40%, -40%);
-            transform: translate(-40%, -40%);
+  section {
+    padding: 25px 0px;
   }
-  .map {
-    margin-left: -140px;
+  .contact-form {
+    width: 100%;
   }
 }
-/*# sourceMappingURL=queries.css.map */
+/*# sourceMappingURL=queries - Copy.css.map */
