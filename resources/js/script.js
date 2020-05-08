@@ -9,17 +9,12 @@ $(document).ready(function(){
     });
 });
 
-$(window).resize(function() {
-  if ($(window).width()>767){
+
     ScrollReveal().reveal('.hero',{delay:300, duration:1500});
     ScrollReveal().reveal('.headline',{delay:300, duration:1000});
     ScrollReveal().reveal('.tagline',{delay:600, duration:2000});
     ScrollReveal().reveal('.punchline',{delay:1200, duration:2000});
     ScrollReveal().reveal('.widget',{delay:1200,interval:500});
-    
-  }
-});
-
 /* Mobile navigation */
     $('.js--nav-icon').click(function() {
         var nav = $('.js--main-nav');
