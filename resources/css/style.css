@@ -1,5 +1,7 @@
 /*colors: darkorange
+    hover #a05800
 another background #f1e3cb
+
 SECRETS TO ALIGN ICON AND TEXT
     line-height: 125%;
     vertical-align: middle;
@@ -22,6 +24,7 @@ html {
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
 }
 
 /*----------------------*/
@@ -93,6 +96,32 @@ h2:after {
 .box p {
   font-size: 90%;
   line-height: 145%;
+}
+
+/*----------------------*/
+/*SCROLLBAR*/
+/*----------------------*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darkorange;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a05800;
 }
 
 /*----------------------*/
@@ -488,8 +517,8 @@ header {
 
 .main-nav {
   margin-top: 20px;
-  float: right;
   list-style: none;
+  float: right;
 }
 
 .main-nav li {
@@ -514,23 +543,19 @@ header {
   border-bottom: 2px solid darkorange;
 }
 
-.section-map {
-  margin-bottom: -100px;
-}
-
-.section-map .map-box {
-  position: relative;
-  left: -40px;
-}
-
-.section-map .map-box1 {
+.gotop-btn {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
   text-align: center;
-  text-transform: uppercase;
-  font-size: 120%;
+  line-height: 60px;
+  font-size: 60px;
+  color: darkorange;
 }
 
-.section-map .map-box1 li {
-  list-style: none;
-  line-height: 150%;
+.gotop-btn :hover {
+  color: rgba(88, 28, 12, 0.91);
 }
 /*# sourceMappingURL=style.css.map */
