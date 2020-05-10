@@ -1,3 +1,4 @@
+<html><body>
 <?php
  
 // get database connection
@@ -19,9 +20,7 @@ $user->created = date('Y-m-d H:i:s');
 // create the user
 if($user->signup()){
     $user_arr=array(
-        "status" => true,
         "message" => "Successfully Signup!",
-        "id" => $user->id,
         "username" => $user->username
     );
 }
@@ -32,3 +31,6 @@ else{
     );
 }
 print_r(json_encode($user_arr));
+?>
+</body>
+</html>
