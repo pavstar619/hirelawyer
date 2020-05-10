@@ -2,10 +2,10 @@
 class Database{
  
     // specify your own database credentials
-    private $host = "server276.web-hosting.com";
-    private $db_name = "hireirhb_phplearning";
-    private $username = "hireirhb_pavstar619";
-    private $password = "hirelawyer619";
+    private $host = "localhost";
+    private $db_name = "PHPLearning";
+    private $username = "root";
+    private $password = "";
     public $conn;
  
     // get the database connection
