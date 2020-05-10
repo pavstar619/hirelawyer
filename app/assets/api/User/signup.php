@@ -1,4 +1,3 @@
-<html><body>
 <?php
  
 // get database connection
@@ -20,17 +19,16 @@ $user->created = date('Y-m-d H:i:s');
 // create the user
 if($user->signup()){
     $user_arr=array(
-        "message" => "Successfully Signup!",
+        "status" => true,
+        "message" => "<p style = 'font-size:25px;'>" .'Successfully Login!'. "</p>",
+        "id" => $user->id,
         "username" => $user->username
     );
 }
 else{
     $user_arr=array(
         "status" => false,
-        "message" => "Username already exists!"
+        "message" => "<p style = 'font-size:25px;'>" .'Username already exists!'. "</p>"
     );
 }
 print_r(json_encode($user_arr));
-?>
-</body>
-</html>

@@ -132,29 +132,29 @@
                 <i class="ion-briefcase icon-big"></i> 
                 <h3>Start a business</h3> 
                 <p>This document can be used to outline business goals, projections, marketing strategies, financing and other important facets of a new business or business venture.</p>
-                <a href="#" class="btn btn-full">Make documents</a>    
+                <a href="./app/makedocuments.html" class="btn btn-full">Make documents</a>    
                 </div>
                 
                 <div class="col span-1-of-4 box ">
                 <i class="ion-key icon-big"></i>
                 <h3>Rent property</h3>
-                <p>The Rental Application allows a landlord to assess and choose applicants for a rental property. The information provided is used to perform background and credit checks on applicants.
+                <p>The Rental application provided is used to perform background and credit checks on applicants in order to make sure they are properly qualified to rent a property.
                 </p>
-                <a href="#" class="btn btn-full">Make documents</a>     
+                <a href="./app/makedocuments.html" class="btn btn-full">Make documents</a>     
                 </div>
                 
                 <div class="col span-1-of-4 box ">
                 <i class="ion-home icon-big"></i>
                 <h3>Buy or sell a home</h3>
                 <p>A Real Estate Purchase Agreement can help you seal the deal and keep track of the sale's progress, all the way until the closing date.</p>
-                <a href="#" class="btn btn-full">Make documents</a> 
+                <a href="./app/makedocuments.html" class="btn btn-full">Make documents</a> 
                     
                 </div>
                 <div class="col span-1-of-4 box ">
                 <i class="ion-heart-broken icon-big"></i>
                 <h3>Get a divorce</h3>
                 <p>This worksheet is intended to organize personal and financial information about you and your spouse to assist you in preparing for a divorce.</p>
-                <a href="#" class="btn btn-full">Make documents</a>    
+                <a href="./app/makedocuments.html" class="btn btn-full">Make documents</a>    
                 </div>
                 
             </div>
@@ -199,7 +199,7 @@
                             <label>&nbsp;</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="submit" value="Get started!">
+                            <a class="btn btn-full" href="app/incorporation.html">Search for lawyer</a> 
                         </div>
                     </div>
                 
@@ -217,13 +217,21 @@
                 Get quick answers from real lawyers, easily. Ask any legal question, or have an On Call attorney review your document.
                 </p>    
             </div>
-            <form method="post" action="#" class="contact-form">
+            <form method="post" action="./app/assets/api/User/asklawyer.php" class="contact-form">
                 <div class="row">
                     <div class="col span-1-of-3">
                         <label>Drop us a line</label>
                     </div>
                     <div class="col span-2-of-3">
-                            <textarea rows="10" name="message" placeholder="Enter your detailed legal question"></textarea>
+                            <textarea rows="10" name="question" placeholder="Enter your detailed legal question"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Email:</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                            <textarea rows="1" name="email" placeholder="Enter your email address"></textarea>
                     </div>
                 </div>
                 <div class="row">
@@ -231,7 +239,7 @@
                         <label>&nbsp;</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input type="submit" value="Get your answer">
+                        <input type="submit" value="Send">
                     </div>
                     </div>
             </form> 
@@ -258,7 +266,7 @@
                             </ul>
                         </div>
                         <div>
-                            <a href="#" class="btn btn-ghost">Sign up now</a>
+                            <a href="app/index.html" class="btn btn-ghost">Sign up now</a>
                         </div>
                     </div>
                 </div>
@@ -277,7 +285,7 @@
                             </ul>
                         </div>
                         <div>
-                            <a href="#" class="btn btn-full">Try us free for 7 days</a>
+                            <a href="app/index.html" class="btn btn-full">Try us free for 7 days</a>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,4 @@
-<html><body>
-    <?php
+<?php
 // include database and object files
 include_once '../config/database.php';
 include_once '../objects/user.php';
@@ -20,7 +19,10 @@ if($stmt->rowCount() > 0){
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
     // create array
     $user_arr=array(
-        "You are logged in!!",$row['username']
+        "status" => true,
+        "message" => "<p style = 'font-size:25px;'>" .'Successfully Login!'. "</p>",
+        "id" => $row['id'],
+        "username" => $row['username']
     );
 }
 else{
@@ -32,5 +34,3 @@ else{
 // make it json format
 print_r(json_encode($user_arr));
 ?>
-</body>
-</html>
