@@ -20,7 +20,7 @@ $user->created = date('Y-m-d H:i:s');
 if($user->signup()){
     $user_arr=array(
         "status" => true,
-        "message" => "<p style = 'font-size:25px;'>" .'Successfully Login!'. "</p>",
+        "message" => "<p style = 'font-size:25px;'>" .'Sign up successful. Your account has been created!'. "</p>",
         "id" => $user->id,
         "username" => $user->username
     );
