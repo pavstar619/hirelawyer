@@ -1,6 +1,6 @@
-<html><body>
+
 <?php
- 
+
 // get database connection
 include_once '../config/database.php';
  
@@ -20,17 +20,15 @@ $user->created = date('Y-m-d H:i:s');
 // create the user
 if($user->signup()){
     $user_arr=array(
-        "message" => "Successfully Signup!",
-        "username" => $user->username
+       "<h1 style = 'font-family: Lato;'>" .'Sign up successful. Your account has been created! You will be redirected shortly'
     );
+    header( "refresh:3;url=/hirelawyer/index.html" );
 }
 else{
     $user_arr=array(
-        "status" => false,
-        "message" => "Username already exists!"
+        "<h1 style = 'font-family: Lato;'>" .'Username already exists! You will be redirected shortly'
     );
+    header( "refresh:3;url=/hirelawyer/app/index.html" );
 }
 print_r(json_encode($user_arr));
-?>
-</body>
-</html>
+

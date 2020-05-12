@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 10, 2020 at 06:01 PM
+-- Generation Time: May 11, 2020 at 05:55 AM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.10
 
@@ -21,6 +21,42 @@ SET time_zone = "+00:00";
 --
 -- Database: `phplearning`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `asklawyer`
+--
+
+CREATE TABLE `asklawyer` (
+  `id` int(6) UNSIGNED NOT NULL,
+  `question` text DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `reg_date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `asklawyer`
+--
+
+INSERT INTO `asklawyer` (`id`, `question`, `email`, `reg_date`) VALUES
+(1, '', NULL, '2020-05-10 19:35:20'),
+(2, '', NULL, '2020-05-10 19:35:45'),
+(3, '', NULL, '2020-05-10 19:37:19'),
+(4, NULL, NULL, '2020-05-10 19:41:23'),
+(5, NULL, NULL, '2020-05-10 19:41:44'),
+(6, NULL, NULL, '2020-05-10 19:46:14'),
+(7, NULL, NULL, '2020-05-10 19:49:21'),
+(8, '', '', '2020-05-10 20:41:55'),
+(9, '', '', '2020-05-10 20:44:07'),
+(10, '', '', '2020-05-10 20:45:12'),
+(11, '', '', '2020-05-10 20:45:16'),
+(12, '', '', '2020-05-10 20:45:35'),
+(13, '', '', '2020-05-10 20:45:38'),
+(14, NULL, NULL, '2020-05-10 20:45:45'),
+(15, '', '', '2020-05-10 20:46:05'),
+(16, '', '', '2020-05-10 20:46:22'),
+(17, '', '', '2020-05-11 03:33:11');
 
 -- --------------------------------------------------------
 
@@ -69,11 +105,25 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `username`, `password`, `created`) VALUES
 (1, 'admin', 'admin', '2020-05-10 11:25:32'),
-(2, 'root', 'root', '2020-05-10 07:32:50');
+(2, 'root', 'root', '2020-05-10 07:32:50'),
+(3, '123', '123', '2020-05-10 12:56:17'),
+(4, '12345', '12345', '2020-05-10 14:23:11'),
+(5, '123456', '123456', '2020-05-10 14:24:19'),
+(6, 'das', 'das', '2020-05-10 15:05:56'),
+(7, '', '', '2020-05-10 15:45:04'),
+(8, 'ggqw', 'ggqw', '2020-05-10 16:49:38'),
+(9, 'asd', 'asd', '2020-05-10 16:50:41'),
+(10, 'asdf', 'asdf', '2020-05-10 23:34:27');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `asklawyer`
+--
+ALTER TABLE `asklawyer`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `lawyers`
@@ -92,6 +142,12 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `asklawyer`
+--
+ALTER TABLE `asklawyer`
+  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
 -- AUTO_INCREMENT for table `lawyers`
 --
 ALTER TABLE `lawyers`
@@ -101,7 +157,7 @@ ALTER TABLE `lawyers`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

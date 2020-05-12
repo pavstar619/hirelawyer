@@ -1,5 +1,5 @@
-<html><body>
-    <?php
+<?php
+
 // include database and object files
 include_once '../config/database.php';
 include_once '../objects/user.php';
@@ -20,17 +20,18 @@ if($stmt->rowCount() > 0){
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
     // create array
     $user_arr=array(
-        "You are logged in!!",$row['username']
+        "<h1 style = 'font-family: Lato;'>" .'Successfully Login! You will be redirected shortly'
     );
+    //redirect
+    header( "refresh:3;url=/hirelawyer/index.html" );
 }
 else{
     $user_arr=array(
-        "status" => false,
-        "message" => "Invalid Username or Password!",
+        "<h1 style = 'font-family: Lato;'>" .'Invalid username or password! You will be redirected shortly'
     );
+    //redirect
+    header( "refresh:3;url=/hirelawyer/app/index.html" );
 }
 // make it json format
 print_r(json_encode($user_arr));
 ?>
-</body>
-</html>

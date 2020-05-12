@@ -82,11 +82,11 @@
                     <td>'.$field3name.'</td> 
                     <td>'.$field4name.'</td> 
                     <td>'.$field5name.'</td> 
-                    <td><a href>HIRE</a></td> 
+                    <td><a href="/hirelawyer/app/makedocuments.html">HIRE</a></td> 
                 </tr>';
         }
 
 
     ?>
-    </body>    
+    </body> <a href="../"   
 </html>
