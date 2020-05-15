@@ -1,0 +1,51 @@
+
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato',Arial, Helvetica, sans-serif;
+    color:white;
+    background-color: #000000b2;
+}
+@mixin centralize {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.red-square {
+    background-color: rgba(255, 140, 0, 0.623);
+    width: 400px;
+    height: 500px;
+    border-radius:50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  h1{
+     text-align: center;
+  }
+  
+  .center{
+    justify-content: center;
+  }
+
+  .row{
+      justify-content: center;
+  }
+
+  .btn-primary{
+      border: none;
+      background-color: darkorange;
+      color:white;
+      font-size: 30px;
+      border-radius: 50px;
+  }
+  .btn-primary:hover{
+      background-color: rgb(156, 86, 0);
+  }

@@ -77,12 +77,12 @@
 
     
             echo '<tr> 
-                    <td>'.$field1name.'</td> 
+                    <td><a href="/hirelawyer/profile/index.html">'.$field1name.'</td> 
                     <td>'.$field2name.'</td> 
                     <td>'.$field3name.'</td> 
                     <td>'.$field4name.'</td> 
                     <td>'.$field5name.'</td> 
-                    <td><a href="/hirelawyer/booking/index.html">HIRE</a></td> 
+                    <td>HIRE</a></td> 
                 </tr>';
         }
 
