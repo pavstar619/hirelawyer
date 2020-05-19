@@ -62,23 +62,35 @@ $(".mytext").on("keydown", function(e){
             $(this).val('');
         }
     }
+    
+});
+$(".mytext").on("keydown", function(e){
+    if (e.which == 16){
+        var text = $(this).val();
+        if (text !== ""){
+            insertChat("you", text);              
+            $(this).val('');
+        }
+    }
+    
 });
 
 $('body > div > div > div:nth-child(2) > span').click(function(){
     $(".mytext").trigger({type: 'keydown', which: 13, keyCode: 13});
+    $(".mytext").trigger({type: 'keydown', which: 16, keyCode: 16});
 })
 
 //-- Clear Chat
 resetChat();
 
 //-- Print Messages
-insertChat("you", "Hello I would like to know more about your legal services", 0);  
+/* insertChat("you", "Hello I would like to know more about your legal services", 0);  
 insertChat("me", "Hi, feel free to ask anything you want", 2000);
 insertChat("you", "Can you see some of my documents?", 4000);
 insertChat("me", "Sure. Send them right in",6000);
 insertChat("you", "Great! I hope to consult you in the future if possible", 8000);
 insertChat("me", "You can always contact me here to send me an email. I'll try to get back to you as soon as possible", 10000);
-insertChat("you", "Thanks!", 12000);
+insertChat("you", "Thanks!", 12000); */
 
 
 //-- NOTE: No use time on insertChat.
