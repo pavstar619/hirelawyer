@@ -1,20 +1,20 @@
 <?php
 include_once('connect.php');
-header( "refresh:1;url=/hirelawyer/payment/makerealdocuments_upload.php" );
+header( "refresh:1;url=/hirelawyer/payment/incorporation_show.php" );
 
 
 try{
     // Create prepared statement
-    $sql = "INSERT INTO make_documents (id,first,last,email,documents) 
-    VALUES (:id,:first,:last,:email,:documents)";
+    $sql = "INSERT INTO incorporation (id,name,email,incorporation,business_type) 
+    VALUES (:id,:name,:email,:incorporation,:business_type)";
     $stmt = $pdo->prepare($sql);
     
     // Bind parameters to statement
     $stmt->bindParam(':id', $_REQUEST['id']);
-    $stmt->bindParam(':first', $_REQUEST['first']);
-    $stmt->bindParam(':last', $_REQUEST['last']);
+    $stmt->bindParam(':name', $_REQUEST['name']);
     $stmt->bindParam(':email', $_REQUEST['email']);
-    $stmt->bindParam(':documents', $_REQUEST['documents']);
+    $stmt->bindParam(':incorporation', $_REQUEST['incorporation']);
+    $stmt->bindParam(':business_type', $_REQUEST['business_type']);
     // Execute the prepared statement
     $stmt->execute();
     echo "Records inserted successfully.";

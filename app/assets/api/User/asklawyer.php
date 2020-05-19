@@ -1,4 +1,6 @@
 <?php
+header( "refresh:3;url=/hirelawyer/index.html" );
+
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
 try{
@@ -22,7 +24,7 @@ try{
     
     // Execute the prepared statement
     $stmt->execute();
-    echo "<p style='color:black; font-size:25px;'>" . 'Records inserted successfully. You will receive any email with you answers!' . "</p>";
+    echo "<h1>" . 'Records inserted successfully. You will receive an email with you answers!' . "</h1>";
 } catch(PDOException $e){
     die("ERROR: Could not able to execute $sql. " . $e->getMessage());
 }
@@ -30,3 +32,11 @@ try{
 // Close connection
 unset($pdo);
 ?>
+<html>
+<head>
+    <title>Booking</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+</head>
+<body style="background-color:#000000b2; color:white; font-family:lato"></body>
+</html>
