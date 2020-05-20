@@ -1,6 +1,6 @@
 <?php
 include_once('connect.php');
-header( "refresh:3;url=/hirelawyer/index.html" );
+header( "refresh:3;url=/index.html" );
 
  
 // Attempt insert query execution

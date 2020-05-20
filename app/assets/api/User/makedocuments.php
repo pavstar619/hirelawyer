@@ -1,6 +1,6 @@
 <?php
 include_once('connect.php');
-header( "refresh:1;url=/hirelawyer/payment/makerealdocuments_upload.php" );
+header( "refresh:1;url=/payment/makerealdocuments_upload.php" );
 
 
 try{

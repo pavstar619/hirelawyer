@@ -77,7 +77,7 @@
 
     
             echo '<tr> 
-                    <td><a href="/hirelawyer/profile/index.html">'.$field1name.'</td> 
+                    <td><a href="/profile/index.html">'.$field1name.'</td> 
                     <td>'.$field2name.'</td> 
                     <td>'.$field3name.'</td> 
                     <td>'.$field4name.'</td> 

@@ -22,13 +22,13 @@ if($user->signup()){
     $user_arr=array(
        "<h1 style = 'font-family: Lato;'>" .'Sign up successful. Your account has been created! You will be redirected shortly'
     );
-    header( "refresh:3;url=/hirelawyer/index.html" );
+    header( "refresh:3;url=/index.html" );
 }
 else{
     $user_arr=array(
         "<h1 style = 'font-family: Lato;'>" .'Username already exists! You will be redirected shortly'
     );
-    header( "refresh:3;url=/hirelawyer/app/index.html" );
+    header( "refresh:3;url=/app/index.html" );
 }
 print_r(json_encode($user_arr));
 ?>

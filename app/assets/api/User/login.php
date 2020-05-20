@@ -22,14 +22,14 @@ if($stmt->rowCount() > 0){
         "<h1 style = 'font-family: Lato;'>" .'Successfully Login! You will be redirected shortly'
     );
     //redirect
-    header( "refresh:3;url=/hirelawyer/index.html" );
+    header( "refresh:3;url=/index.html" );
 }
 else{
     $user_arr=array(
         "<h1 style = 'font-family: Lato;'>" .'Invalid username or password! You will be redirected shortly'
     );
     //redirect
-    header( "refresh:3;url=/hirelawyer/app/index.html" );
+    header( "refresh:3;url=/app/index.html" );
 }
 // make it json format
 print_r(json_encode($user_arr));

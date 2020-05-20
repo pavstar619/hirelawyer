@@ -1,0 +1,89 @@
+# Query: /hirelawyer
+# Flags: IgnoreExcludeSettings
+
+37 results - 24 files
+
+index.html:
+  173:                 <form method="post" action="/hirelawyer/app/assets/api/User/incorporation.php" class="contact-form">
+
+README.md:
+  2: Hirelawyer website. github https://pavstar619.github.io/hirelawyer/
+
+app\makerealdocuments.html:
+  181:       <form action="/hirelawyer/app/assets/api/User/makedocuments.php">
+
+app\assets\api\User\asklawyer.php:
+  2: header( "refresh:3;url=/hirelawyer/index.html" );
+
+app\assets\api\User\incorporation.php:
+  3: header( "refresh:1;url=/hirelawyer/payment/incorporation_show.php" );
+
+app\assets\api\User\login.php:
+  25:     header( "refresh:3;url=/hirelawyer/index.html" );
+  32:     header( "refresh:3;url=/hirelawyer/app/index.html" );
+
+app\assets\api\User\make_appointment.php:
+  3: header( "refresh:1;url=/hirelawyer/payment/index_2.html" );
+
+app\assets\api\User\makedocuments.php:
+  3: header( "refresh:1;url=/hirelawyer/payment/makerealdocuments_upload.php" );
+
+app\assets\api\User\searchlawyers_1.php:
+  80:                     <td><a href="/hirelawyer/profile/index.html">'.$field1name.'</td> 
+
+app\assets\api\User\searchlawyers.php:
+  85:                     <td><a href="/hirelawyer/booking/index.html">HIRE</a></td> 
+
+app\assets\api\User\signup.php:
+  25:     header( "refresh:3;url=/hirelawyer/index.html" );
+  31:     header( "refresh:3;url=/hirelawyer/app/index.html" );
+
+app\assets\api\User\sslcommerz.php:
+  3: header( "refresh:1;url=/hirelawyer/payment/booked.php" );
+
+booking\index.html:
+  45: 							<form action="/hirelawyer/app/assets/api/User/make_appointment.php" method="post">
+  65: 										<a href="/hirelawyer/payment/booked_2.1.php" class="submit-btn">No slot?</a>
+
+payment\booked_1.php:
+  2: header( "refresh:3;url=/hirelawyer/index.html" );
+
+payment\booked_2.1.php:
+  2: header( "refresh:3;url=/hirelawyer/index.html" );
+
+payment\booked_2.php:
+  2: header( "refresh:3;url=/hirelawyer/index.html" );
+
+payment\booked.php:
+  2: header( "refresh:3;url=/hirelawyer/index.html" );
+
+payment\incorporation_show.php:
+  2: header( "refresh:3;url=/hirelawyer/index.html" );
+
+payment\index_1.html:
+   97: 												<a href="/hirelawyer/index.html">Cancel</a>
+  140: 											<a href="/hirelawyer/index.html">Cancel</a>
+  206: 												<a href="/hirelawyer/index.html">Cancel</a>
+
+payment\index_2.html:
+   62: 											<form action="/hirelawyer/app/assets/api/User/sslcommerz.php" method="post">
+   97: 												<a href="/hirelawyer/index.html">Cancel</a>
+  140: 											<a href="/hirelawyer/index.html">Cancel</a>
+  151: 													<form action="/hirelawyer/app/assets/api/User/sslcommerz.php" method="post">
+  179: 											<form action="/hirelawyer/app/assets/api/User/sslcommerz.php" method="post">
+  206: 												<a href="/hirelawyer/index.html">Cancel</a>
+
+payment\index.html:
+   97: 												<a href="/hirelawyer/index.html">Cancel</a>
+  140: 											<a href="/hirelawyer/index.html">Cancel</a>
+  206: 												<a href="/hirelawyer/index.html">Cancel</a>
+
+payment\makerealdocuments_upload.php:
+  2: header( "refresh:3;url=/hirelawyer/index.html" );
+
+profile\index.html:
+  21:                     <a class="btn btn-primary" href="/hirelawyer/chat/index.html">Contact Lawyer</a>
+
+searchapp\search-form.php:
+  109:             <form action="/hirelawyer/profile" method="post">
+  131:                     <a class="btn btn-primary" href="/hirelawyer/chat/index.html">Contact Lawyer</a>

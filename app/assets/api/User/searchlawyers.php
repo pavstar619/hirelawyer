@@ -82,7 +82,7 @@
                     <td>'.$field3name.'</td> 
                     <td>'.$field4name.'</td> 
                     <td>'.$field5name.'</td> 
-                    <td><a href="/hirelawyer/booking/index.html">HIRE</a></td> 
+                    <td><a href="/booking/index.html">HIRE</a></td> 
                 </tr>';
         }
 

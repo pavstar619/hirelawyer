@@ -106,7 +106,7 @@ $(document).ready(function(){
 </head>
 <body>
     <div class="row">
-            <form action="/hirelawyer/profile" method="post">
+            <form action="/profile" method="post">
                 <h1>Search for a lawyer</h1>
                 <div class="search-box">
                 <input type="text" class="form-control" autocomplete="off" placeholder="Search lawyers..." />
@@ -128,7 +128,7 @@ $(document).ready(function(){
                     <img style="width: 150px; height:150px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" src='avatar.png'>
                 </div>
                 <div class="row">
-                    <a class="btn btn-primary" href="/hirelawyer/chat/index.html">Contact Lawyer</a>
+                    <a class="btn btn-primary" href="/chat/index.html">Contact Lawyer</a>
                 </div>
             </div>
       

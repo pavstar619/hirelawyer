@@ -1,6 +1,6 @@
 <?php
 include_once('connect.php');
-header( "refresh:1;url=/hirelawyer/payment/index_2.html" );
+header( "refresh:1;url=/payment/index_2.html" );
 
 
 try{
