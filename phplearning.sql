@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 11, 2020 at 05:55 AM
+-- Generation Time: May 19, 2020 at 08:30 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.10
 
@@ -29,34 +29,45 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `asklawyer` (
-  `id` int(6) UNSIGNED NOT NULL,
-  `question` text DEFAULT NULL,
-  `email` varchar(50) DEFAULT NULL,
-  `reg_date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+  `id` int(11) NOT NULL,
+  `question` varchar(255) NOT NULL,
+  `email` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `asklawyer`
 --
 
-INSERT INTO `asklawyer` (`id`, `question`, `email`, `reg_date`) VALUES
-(1, '', NULL, '2020-05-10 19:35:20'),
-(2, '', NULL, '2020-05-10 19:35:45'),
-(3, '', NULL, '2020-05-10 19:37:19'),
-(4, NULL, NULL, '2020-05-10 19:41:23'),
-(5, NULL, NULL, '2020-05-10 19:41:44'),
-(6, NULL, NULL, '2020-05-10 19:46:14'),
-(7, NULL, NULL, '2020-05-10 19:49:21'),
-(8, '', '', '2020-05-10 20:41:55'),
-(9, '', '', '2020-05-10 20:44:07'),
-(10, '', '', '2020-05-10 20:45:12'),
-(11, '', '', '2020-05-10 20:45:16'),
-(12, '', '', '2020-05-10 20:45:35'),
-(13, '', '', '2020-05-10 20:45:38'),
-(14, NULL, NULL, '2020-05-10 20:45:45'),
-(15, '', '', '2020-05-10 20:46:05'),
-(16, '', '', '2020-05-10 20:46:22'),
-(17, '', '', '2020-05-11 03:33:11');
+INSERT INTO `asklawyer` (`id`, `question`, `email`) VALUES
+(1, 'asdf', 'asdf'),
+(3, 'dasdasd', 'asdasdas'),
+(5, 'dasdasdd', 'asdasdasd'),
+(6, 'eqw', 'qwe'),
+(7, 'qwerr', 'rqwe'),
+(8, 'rqw', 'tr'),
+(9, 'tt', 'tt'),
+(10, 'ttt', 'ttt');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `incorporation`
+--
+
+CREATE TABLE `incorporation` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `incorporation` varchar(50) NOT NULL,
+  `business_type` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `incorporation`
+--
+
+INSERT INTO `incorporation` (`id`, `name`, `email`, `incorporation`, `business_type`) VALUES
+(1, 'asd', 'asd', 'Chittagong', 'Small Company');
 
 -- --------------------------------------------------------
 
@@ -85,6 +96,77 @@ INSERT INTO `lawyers` (`id`, `firstname`, `lastname`, `specialty`, `email`, `cit
 (5, 'Jim', 'N', 'Corporate', 'jim@gmail.com', 'Rajshahi'),
 (6, 'Jill', 'O', 'Criminal', 'jill@gmail.com', 'Dhaka'),
 (7, 'Carla', 'P', 'International', 'carla@gmail.com', 'Sylhet');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `make_appointment`
+--
+
+CREATE TABLE `make_appointment` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `make_appointment`
+--
+
+INSERT INTO `make_appointment` (`id`, `name`, `email`, `date`) VALUES
+(1, '123', '123', '0000-00-00'),
+(2, 'das', 'das', '2011-03-02'),
+(3, 'asdsa', 'dasdsa', '1212-12-12'),
+(4, 'zxc', 'zxc', '1212-12-12'),
+(5, 'ads', 'ads', '0000-00-00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `make_documents`
+--
+
+CREATE TABLE `make_documents` (
+  `id` int(11) NOT NULL,
+  `first` varchar(50) NOT NULL,
+  `last` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `documents` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `make_documents`
+--
+
+INSERT INTO `make_documents` (`id`, `first`, `last`, `email`, `documents`) VALUES
+(1, 'asd', 'asd', 'asd', 'asd'),
+(2, 'dasd', 'dasdsa', 'asdsa', 'dasd');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sslcommerz`
+--
+
+CREATE TABLE `sslcommerz` (
+  `id` int(11) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `first_name` varchar(50) NOT NULL,
+  `name_on_card` varchar(50) NOT NULL,
+  `card_number` int(16) NOT NULL,
+  `day` int(11) NOT NULL,
+  `year` int(11) NOT NULL,
+  `cvv_number` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `sslcommerz`
+--
+
+INSERT INTO `sslcommerz` (`id`, `email`, `first_name`, `name_on_card`, `card_number`, `day`, `year`, `cvv_number`) VALUES
+(1, 'asdas', 'asd', 'asd', 1234, 6, 1988, 1234),
+(2, 'das', 'das', 'das', 123, 6, 1988, 123);
 
 -- --------------------------------------------------------
 
@@ -123,13 +205,42 @@ INSERT INTO `users` (`id`, `username`, `password`, `created`) VALUES
 -- Indexes for table `asklawyer`
 --
 ALTER TABLE `asklawyer`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`);
+
+--
+-- Indexes for table `incorporation`
+--
+ALTER TABLE `incorporation`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`);
 
 --
 -- Indexes for table `lawyers`
 --
 ALTER TABLE `lawyers`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `make_appointment`
+--
+ALTER TABLE `make_appointment`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`);
+
+--
+-- Indexes for table `make_documents`
+--
+ALTER TABLE `make_documents`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`);
+
+--
+-- Indexes for table `sslcommerz`
+--
+ALTER TABLE `sslcommerz`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`);
 
 --
 -- Indexes for table `users`
@@ -145,13 +256,37 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `asklawyer`
 --
 ALTER TABLE `asklawyer`
-  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT for table `incorporation`
+--
+ALTER TABLE `incorporation`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `lawyers`
 --
 ALTER TABLE `lawyers`
   MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
+-- AUTO_INCREMENT for table `make_appointment`
+--
+ALTER TABLE `make_appointment`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `make_documents`
+--
+ALTER TABLE `make_documents`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `sslcommerz`
+--
+ALTER TABLE `sslcommerz`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `users`

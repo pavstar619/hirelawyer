@@ -588,7 +588,7 @@ header {
 }
 
 .sticky .main-nav {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .sticky .main-nav li a:link,
