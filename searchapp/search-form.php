@@ -23,7 +23,7 @@
     }
     h1{
         padding: 20px;
-        font-size: 60px;
+        font-size: 80px;
     } 
 
     .row {
@@ -45,13 +45,13 @@
     }
     /* Formatting search box */
     .search-box{
-        width: 300px;
+        width: 600px;
         position: relative;
         display: inline-block;
         font-size: 14px;
     }
     .search-box input[type="text"]{
-        height: 45px;
+        height: 55px;
         padding: 5px 10px;
         border: 1px solid darkorange;
         font-size: 25px;
@@ -106,10 +106,10 @@ $(document).ready(function(){
 </head>
 <body>
     <div class="row">
-            <form action="/profile" method="post">
+            <form action="/hirelawyer/profile" method="post">
                 <h1>Search for a lawyer</h1>
                 <div class="search-box">
-                <input type="text" class="form-control" autocomplete="off" placeholder="Search lawyers..." />
+                <input type="text" class="form-control" autocomplete="off" placeholder="Search by name or location..." />
                 <input class="btn btn-primary" type="submit" value="Search">
                 <div class="result"></div>
             </form>
@@ -119,17 +119,3 @@ $(document).ready(function(){
 </html>
 
 
-<!-- <div class="row">
-            <div class="red-square">
-                <div class="row">
-                <h1>Search for a lawyer</h1>
-                </div>
-                <div class="row">
-                    <img style="width: 150px; height:150px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" src='avatar.png'>
-                </div>
-                <div class="row">
-                    <a class="btn btn-primary" href="/chat/index.html">Contact Lawyer</a>
-                </div>
-            </div>
-      
-        </div> -->

@@ -1,10 +1,19 @@
 <?php
-include_once('connect.php');
+/* Attempt MySQL server connection. Assuming you are running MySQL
+server with default setting (user 'root' with no password) */
+try{
+    $pdo = new PDO("mysql:host=localhost;dbname=phplearning", "root", "");
+    // Set the PDO error mode to exception
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch(PDOException $e){
+    die("ERROR: Could not connect. " . $e->getMessage());
+}
+ 
 // Attempt search query execution
 try{
     if(isset($_REQUEST["term"])){
         // create prepared statement
-        $sql = "SELECT * FROM lawyers WHERE firstname LIKE :term";
+        $sql = "SELECT * FROM lawyers WHERE (firstname LIKE :term) OR (city LIKE :term)";
         $stmt = $pdo->prepare($sql);
         $term = $_REQUEST["term"] . '%';
         // bind parameters to statement
@@ -13,7 +22,7 @@ try{
         $stmt->execute();
         if($stmt->rowCount() > 0){
             while($row = $stmt->fetch()){
-                echo "<p>" . $row["firstname"]." ". $row["lastname"] ." ". $row["city"]. "</p>";
+                echo "<p>" . "Name: ". $row["firstname"]." ". $row["lastname"] ."<br>Location: ". $row["city"]. "</p>";
             }
         } else{
             echo "<p>No matches found</p>";
