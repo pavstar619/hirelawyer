@@ -64,8 +64,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;                            
                             $_SESSION["user_type"] = $user_type;                            
-                            if($_SESSION["user_type"] == 'Customer'){
-                                header("location:/hirelawyer/index.php");
+                            if($_SESSION["user_type"] == 'Admin'){
+                                header("location:/hirelawyer/crudapp/index.php");
                             } 
                             else{
                                 header("location:/hirelawyer/index.php");
