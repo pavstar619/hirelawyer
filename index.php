@@ -1,3 +1,14 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: index.html");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -53,14 +64,19 @@
                             <li><a href="#section-map">Message Lawyer</a></li> 
                             <li><a href="#section-documents">Make documents</a></li>   
                             <li><a href="#section-plans">Pricing</a></li>
-                            <li><a class="btn btn-full" style="padding: 0px 25px;" href="./app/index.php">Sign in</a></li>
+                            <li><a class="btn btn-full" style="padding: 0px 25px;" href="/hirelawyer/app/logout.php">Sign out</a></li>
                             <li><a href="searchapp/search-form.php"><i style="font-size: 250%; color:darkorange;" class="ion-search"></i></a></li>
                             </ul>    
                    
                     <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
                 </div>
+                <br>
+                
             </nav>   
             <div class="hero-text-box hero">
+            <div class="row">
+                        <p style="font-size:30px; color:white;">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site. You're logged in as <b><?php echo htmlspecialchars($_SESSION["user_type"]); ?></b>. </p>
+                        </div>
                         <h1 class="">What can we help you with today?</h1>
                         <a class="btn btn-full" href="./app/assets/api/User/searchlawyers.php">Make Appointment</a>
                         <a class="btn btn-ghost" href="./app/assets/api/User/searchlawyers_1.php">Message Lawyer</a>    
@@ -136,7 +152,7 @@
                 <i class="ion-briefcase icon-big"></i> 
                 <h3>Start a business</h3> 
                 <p>This document can be used to outline business goals, projections, marketing strategies, financing and other important facets of a new business or business venture.</p>
-                <a href="./app/makerealdocuments.php" class="btn btn-full">Make documents</a>    
+                <a href="./app/makerealdocuments.html" class="btn btn-full">Make documents</a>    
                 </div>
                 
                 <div class="col span-1-of-4 box ">
@@ -144,21 +160,21 @@
                 <h3>Rent property</h3>
                 <p>The Rental application provided is used to perform background and credit checks on applicants in order to make sure they are properly qualified to rent a property.
                 </p>
-                <a href="./app/makerealdocuments.php" class="btn btn-full">Make documents</a>     
+                <a href="./app/makerealdocuments.html" class="btn btn-full">Make documents</a>     
                 </div>
                 
                 <div class="col span-1-of-4 box ">
                 <i class="ion-home icon-big"></i>
                 <h3>Buy or sell a home</h3>
                 <p>A Real Estate Purchase Agreement can help you seal the deal and keep track of the sale's progress, all the way until the closing date.</p>
-                <a href="./app/makerealdocuments.php" class="btn btn-full">Make documents</a> 
+                <a href="./app/makerealdocuments.html" class="btn btn-full">Make documents</a> 
                     
                 </div>
                 <div class="col span-1-of-4 box ">
                 <i class="ion-heart-broken icon-big"></i>
                 <h3>Get a divorce</h3>
                 <p>This worksheet is intended to organize personal and financial information about you and your spouse to assist you in preparing for a divorce.</p>
-                <a href="./app/makerealdocuments.php" class="btn btn-full">Make documents</a>    
+                <a href="./app/makerealdocuments.html" class="btn btn-full">Make documents</a>    
                 </div>
                 
             </div>
@@ -306,7 +322,7 @@
                             </ul>
                         </div>
                         <div>
-                            <a href="/hirelawyer/app/index.php" class="btn btn-ghost">Try us free for 7 days</a>
+                            <a href="app/index.php" class="btn btn-ghost">Try us free for 7 days</a>
                         </div>
                     </div>
                 </div>

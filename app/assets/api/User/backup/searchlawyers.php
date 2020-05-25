@@ -1,6 +1,3 @@
-<?php
-include_once('../../../../header.php');
-?>
 <html>
     <head>
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -51,7 +48,6 @@ include_once('../../../../header.php');
     // include database and object files
     include_once '../config/database.php';
     include_once '../objects/lawyers.php';
-
     
     // get database connection
     $database = new Database();
@@ -86,11 +82,11 @@ include_once('../../../../header.php');
                     <td>'.$field3name.'</td> 
                     <td>'.$field4name.'</td> 
                     <td>'.$field5name.'</td> 
-                    <td><a href="/hirelawyer/booking/index.php">HIRE</a></td> 
+                    <td><a href="/hirelawyer/booking/index.html">HIRE</a></td> 
                 </tr>';
         }
 
 
     ?>
-    </body> 
+    </body> <a href="../"   
 </html>

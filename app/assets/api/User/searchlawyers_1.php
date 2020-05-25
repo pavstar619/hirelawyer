@@ -1,3 +1,6 @@
+<?php
+include_once('../../../../header.php');
+?>
 <html>
     <head>
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -77,7 +80,7 @@
 
     
             echo '<tr> 
-                    <td><a href="/profile/index.html">'.$field1name.'</td> 
+                    <td><a href="/hirelawyer/profile/index.php">'.$field1name.'</td> 
                     <td>'.$field2name.'</td> 
                     <td>'.$field3name.'</td> 
                     <td>'.$field4name.'</td> 

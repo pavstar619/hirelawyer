@@ -1,4 +1,7 @@
 
+<?php
+include_once('../header.php');
+?>
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -27,6 +30,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript" src="js/jquery.min.js"></script>
 </head>
 <body>
+	<br>
+	<br>
+	<br>
+	<br>
 	<div class="main">
 		<h1>SSLCommerz</h1>
 		<div class="content">
@@ -57,39 +64,39 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="resp-tabs-container">
 									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
 										<div class="payment-info">
-											<h3>Personal Information</h3>
-											<form action="booked.php">
+											
+											
+											<form action="/hirelawyer/app/assets/api/User/sslcommerz.php" method="post">
+												<h3>Personal Information</h3>
 												<div class="tab-for">				
 													<h5>EMAIL ADDRESS</h5>
-														<input type="text" value="">
+														<input type="text" name="email" value="">
 													<h5>FIRST NAME</h5>													
-														<input type="text" value="">
-												</div>			
-											</form>
-											<h3 class="pay-title">Credit Card Info</h3>
-											<form action="booked.php">
+														<input type="text" name="first_name" value="">
+												</div>	
+												<h3 class="pay-title">Credit Card Info</h3>
 												<div class="tab-for">				
 													<h5>NAME ON CARD</h5>
-														<input type="text" value="">
+														<input type="text" name="name_on_card" value="">
 													<h5>CARD NUMBER</h5>													
-														<input class="pay-logo" type="text" value="0000-0000-0000-0000" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '0000-0000-0000-0000';}" required="">
+														<input class="pay-logo" type="text" name="card_number" value="0000-0000-0000-0000" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '0000-0000-0000-0000';}" required="">
 												</div>	
 												<div class="transaction">
 													<div class="tab-form-left user-form">
 														<h5>EXPIRATION</h5>
 															<ul>
 																<li>
-																	<input type="number" class="text_box" type="text" value="6" min="1" />	
+																	<input type="number" name="day" class="text_box" type="text" value="6" min="1" />	
 																</li>
 																<li>
-																	<input type="number" class="text_box" type="text" value="1988" min="1" />	
+																	<input type="number" name="year" class="text_box" type="text" value="1988" min="1" />	
 																</li>
 																
 															</ul>
 													</div>
 													<div class="tab-form-right user-form-rt">
 														<h5>CVV NUMBER</h5>													
-														<input type="text" value="xxxx" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'xxxx';}" required="">
+														<input type="text" name="cvv_number" value="xxxx" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'xxxx';}" required="">
 													</div>
 													<div class="clear"></div>
 												</div>
@@ -148,7 +155,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<div class="user-login">
 													<h2>Login</h2>
 													
-													<form action="booked.php">
+													<form action="/hirelawyer/app/assets/api/User/sslcommerz.php" method="post">
 														<input type="text" value="name@email.com" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'name@email.com';}" required="">
 														<input type="password" value="PASSWORD" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'PASSWORD';}" required="">
 															<div class="user-grids">
@@ -176,7 +183,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<div class="payment-info">
 											
 											<h3 class="pay-title">Debit Card Info</h3>
-											<form action="booked.php">
+											<form action="/hirelawyer/app/assets/api/User/sslcommerz.php" method="post">
 												<div class="tab-for">				
 													<h5>NAME ON CARD</h5>
 														<input type="text" value="">

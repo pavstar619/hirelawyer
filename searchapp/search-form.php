@@ -1,3 +1,7 @@
+<?php
+include('../header.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,6 +23,8 @@
     form{
         display: inline-block;
         margin-top:15em;
+        margin-left:0em;
+
     
     }
     h1{
