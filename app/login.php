@@ -9,7 +9,7 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
 }
  
 // Include config file
-require_once "assets/api/config/connect.php";
+require_once "connect.php";
  
 // Define variables and initialize with empty values
 $username = $password = $user_type = "";
