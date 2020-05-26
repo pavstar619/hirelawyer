@@ -86,7 +86,7 @@ include_once('../../../../header.php');
                     <td>'.$field3name.'</td> 
                     <td>'.$field4name.'</td> 
                     <td>'.$field5name.'</td> 
-                    <td><a href="/hirelawyer/booking/index.php">HIRE</a></td> 
+                    <td><a href="/booking/index.php">HIRE</a></td> 
                 </tr>';
         }
 

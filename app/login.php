@@ -65,10 +65,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $_SESSION["username"] = $username;                            
                             $_SESSION["user_type"] = $user_type;                            
                             if($_SESSION["user_type"] == 'Admin'){
-                                header("location:/hirelawyer/crudapp/index.php");
+                                header("location:/crudapp/index.php");
                             } 
                             else{
-                                header("location:/hirelawyer/index.php");
+                                header("location:/index.php");
                             }   
                             // Redirect user to welcome page
                             

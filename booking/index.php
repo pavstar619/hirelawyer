@@ -45,7 +45,7 @@ include_once('../header.php');
 					</div>
 					<div class="col-md-4 col-md-pull-7">
 						<div class="booking-form">
-							<form action="/hirelawyer/app/assets/api/User/make_appointment.php" method="post">
+							<form action="/app/assets/api/User/make_appointment.php" method="post">
 								<div class="form-group">
 									<span class="form-label">Your Name</span>
 									<input class="form-control" type="text" name="name" placeholder="Enter your name">
@@ -65,7 +65,7 @@ include_once('../header.php');
 								<div class="row">
 									<div class="form-btn">
 										<button class="submit-btn">Check availability</button>
-										<a href="/hirelawyer/payment/booked_2.1.php" class="submit-btn">No slot?</a>
+										<a href="/payment/booked_2.1.php" class="submit-btn">No slot?</a>
 									</div>
 								</div>
 							</form>

@@ -65,7 +65,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                             <li><a href="#section-map">Message Lawyer</a></li> 
                             <li><a href="#section-documents">Make documents</a></li>   
                             <li><a href="#section-plans">Pricing</a></li>
-                            <li><a class="btn btn-full" style="padding: 0px 25px;" href="/hirelawyer/app/logout.php">Sign out</a></li>
+                            <li><a class="btn btn-full" style="padding: 0px 25px;" href="/app/logout.php">Sign out</a></li>
                             <li><a href="searchapp/search-form.php"><i style="font-size: 250%; color:darkorange;" class="ion-search"></i></a></li>
                             </ul>    
                    
@@ -187,7 +187,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <a id="section-business"><h2>Incorporation</h2></a>
             </div>
             <div class="row tagline">
-                <form method="post" action="/hirelawyer/app/assets/api/User/incorporation.php" class="contact-form">
+                <form method="post" action="/app/assets/api/User/incorporation.php" class="contact-form">
                     <div class="row">
                         <div class="col span-1-of-3">
                             <label>Name:</label>

@@ -112,7 +112,7 @@ $(document).ready(function(){
 </head>
 <body>
     <div class="row">
-            <form action="/hirelawyer/profile" method="post">
+            <form action="/profile" method="post">
                 <h1>Search for a lawyer</h1>
                 <div class="search-box">
                 <input type="text" class="form-control" autocomplete="off" placeholder="Search by name or location..." />

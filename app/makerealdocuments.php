@@ -182,7 +182,7 @@ include_once('../header.php')
   </head>
   <body>
     <div class="testbox">
-      <form action="/hirelawyer/app/assets/api/User/makedocuments.php">
+      <form action="/app/assets/api/User/makedocuments.php">
         <div class="banner">
           <h1>Upload Documents Form</h1>
         </div>

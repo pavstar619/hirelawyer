@@ -48,11 +48,11 @@ session_start();
     </head>
     <body> 
             <nav>   
-                <a href="index.html"><img src="/hirelawyer/resources/img/logo2.png" alt="Hire Lawyer logo" class="logo" style="margin-top:20px;margin-left:20px;height: 100px;width:auto;float: left;border-radius: 10px;"> </a>
+                <a href="index.html"><img src="/resources/img/logo2.png" alt="Hire Lawyer logo" class="logo" style="margin-top:20px;margin-left:20px;height: 100px;width:auto;float: left;border-radius: 10px;"> </a>
                 <div style="float:right; text-transform:uppercase; padding:10px 10px; word-spacing:20px;">
                     
-                        <a style="background-color:darkorange; border-radius:50px; color:white; font-size:20px; text-decoration:none;" href="/hirelawyer/index.php">Home </a>
-                        <a style="background-color:darkorange; border-radius:50px; color:white; font-size:20px; text-decoration:none;" href="/hirelawyer/app/logout.php">Logout </a>
+                        <a style="background-color:darkorange; border-radius:50px; color:white; font-size:20px; text-decoration:none;" href="/index.php">Home </a>
+                        <a style="background-color:darkorange; border-radius:50px; color:white; font-size:20px; text-decoration:none;" href="/app/logout.php">Logout </a>
                                         
                 </div>
             </nav>   

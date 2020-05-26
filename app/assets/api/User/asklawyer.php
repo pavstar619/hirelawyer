@@ -1,5 +1,5 @@
 <?php
-header( "refresh:3;url=/hirelawyer/index.html" );
+header( "refresh:3;url=/index.html" );
 
 include_once('connect.php');
  

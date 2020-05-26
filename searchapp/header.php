@@ -20,8 +20,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <header>
             <nav class="navbar navbar-light" style="background-color: darkorange; float:left;">
                 <!-- <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="navbar-brand" href="/hirelawyer/index.php">Home</a></li>    
-                    <li class="nav-item active"><a class="navbar-brand" href="/hirelawyer/index.php">Logout</a></li>    
+                    <li class="nav-item active"><a class="navbar-brand" href="/index.php">Home</a></li>    
+                    <li class="nav-item active"><a class="navbar-brand" href="/index.php">Logout</a></li>    
                 </ul> -->
  <!--                <div class="d-inline p-2 bg-primary text-white">d-inline</div>
 <div class="d-inline p-2 bg-dark text-white">d-inline</div> -->
