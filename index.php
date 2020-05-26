@@ -54,7 +54,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <header>
             <nav>   
                 <div class="row">
-                    
+                        
+
                         <a href="index.html"><img src="resources/img/logo2.png" alt="Hire Lawyer logo" class="logo"> </a>
                         <a href="index.html"><img src="resources/img/logo1.png" alt="Hire Lawyer logo" class="logo2"> </a>
              
@@ -347,7 +348,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                     </ul>
                 </div>
                 <div class="row">
-                <p>Copyright &copy 2020 Hire Lawyer All Rights Reserved </p>
+                <p>Copyright &copy 2020 Hire Lawyer &mdash; Pavel Rahman All Rights Reserved </p>
                 </div>
             </div>
         

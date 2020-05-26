@@ -1,10 +1,15 @@
 <?php
 /* Database credentials. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-define('DB_SERVER', 'localhost');
+/* define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
-define('DB_NAME', 'phplearning');
+define('DB_NAME', 'phplearning'); */
+private $host = "server276.web-hosting.com";
+    private $db_name = "hireirhb_phplearning";
+    private $username = "hireirhb_pavstar619";
+    private $password = "hirelawyer619";
+    public $conn;
  
 /* Attempt to connect to MySQL database */
 try{
