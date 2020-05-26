@@ -22,7 +22,7 @@ if($stmt->rowCount() > 0){
         "<h1 style = 'font-family: Lato;'>" .'Successfully Login! You will be redirected shortly'
     );
     //redirect
-    header( "refresh:3;url=/index.html" );
+    header( "refresh:3;url=/index.php" );
 }
 else{
     $user_arr=array(

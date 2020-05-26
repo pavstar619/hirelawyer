@@ -21,7 +21,7 @@ include_once('../header.php');
                     <img style="width: 150px; height:150px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" src='avatar.png'>
                 </div>
                 <div class="row">
-                    <a class="btn btn-primary" href="/chat/index.html">Contact Lawyer</a>
+                    <a class="btn btn-primary" href="/chat/index.php">Contact Lawyer</a>
                 </div>
             </div>
       
