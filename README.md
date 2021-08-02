@@ -14,7 +14,7 @@ git clone https://github.com/pavstar619/hirelawyer.git
 ## Youtube Videos: https://youtube.com/playlist?list=PLpuCqB-Y1M4uBXmVF_8p9-Rt3HK_B9L2G
 
 ## Showcase
-========
+
 ![alt text](Screenshots/1.png "website image 1")
 
 ![alt text](Screenshots/2.png "website image 2")
